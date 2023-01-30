@@ -1,0 +1,20 @@
+
+
+
+GitHub Menu (Stable) - Later Added
+
+if MainMenu == "D" or "d":
+    print("-----------------------------------------------")
+    print("")
+    print("GitHub")
+    print("")
+    print("Game Design by OneTakashi on GitHub")
+    print("Story/Plot by OneTakashi On GitHub")
+    print("Characters by Brookiess._ on Instagram")
+    print("Setting by POKK on Twitter")
+    print("")
+    print("! this Project is 100% Open-Soruce just make sure your not change any names in the GitHub Menu, but you can still add your own title ;)")
+    print("")
+    print("The Official GitHub for Enchated Dectective")
+    print("github.com/onetakashi")
+    print("")

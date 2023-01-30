@@ -1,0 +1,19 @@
+(Unstable) Problem 1 - Incorrect Messages Needed to be fixed!
+
+Sample:
+
+while MainMenu != ""or"a"or"A"or"b"or"B"or"c"or"C"or"D"or"d":
+IncorrectMain = input("The Ghost of the Rose Garden: oh no its very wrong output, please enter the correct letter until we will meet again")
+
+(Unstable) Problem 2 - Go Back to Menu needed to to be added.
+
+Sample:     
+
+restart= input("Press Enter to go back the main menu")
+
+    if restart == "":
+        print("Please Restart the whole program")
+        print("The Back to Menu will be updated soon, Please Check GitHut for any Updates")
+
+
+
