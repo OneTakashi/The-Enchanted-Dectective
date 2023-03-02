@@ -1,4 +1,3 @@
-
 #Starting Notes (Stable)
 print("")
 print("")
@@ -19,11 +18,21 @@ EnteredContinue2 = 0.0
 
 SelectOption1 = "Type a Letter Between A to D To Select a Option ¬ "
 Selectoption1wrong = "Please Enter a Letter Between A to D To Select a Option Again! (in Higherkey) ¬ "
-Player_Name_Var = "Type a Vaild Player Name (or Leave it blank for the name Lillana) ¬ "
+
 PressEnter_Var = "Press Enter to Continue ¬"
 Player_Name_Var = "Type a Vaild Player Name (or Leave it blank for the name Lillana) ¬ "
 PressEnter_Var = "Press Enter to Continue ¬ "
 PressEnter_Var_wrong = "Please Press Enter to Continue Again! ¬ "
+
+typeA = "Type 'A' Question: "
+typeAB = "Type A or B Question: "
+typeABC = "Type Betwen A to C Question: "
+typeABCD = "Type Between A to D Question: "
+
+typeWrong = "Please Type A Question!: "
+typeABWrong = "Please type A to B Question!:"
+typeABCWrong = "Please type A to B Question!: "
+typeABCDWrong = "Please type A to D Question!: "
 
 #Menu (Stable)
 print("")
@@ -50,19 +59,12 @@ print("")
 PlayerUsername = input(Player_Name_Var)
 
 
-
-
 if PlayerUsername == "":
     PlayerUsername = "Lillana"
 
 
-#Problem 1 (Unstable!)
-
-
 
 #Start Menu  - The Main Game     ! 
-
-
 
 if MainMenu == "A" or "a":
     print("")
@@ -105,9 +107,11 @@ print("")
 print("! Quick Note Before You Start - Please just type the letterd (a, b and c) or numbers if your ask to")
 print("")
 
+
 EnteredContinue0 = input(PressEnter_Var)
 while EnteredContinue0!="": 
     EnteredContinue0 = input(PressEnter_Var_wrong)
+
 
 if EnteredContinue0 == "":
 
@@ -130,12 +134,14 @@ if EnteredContinue0 == "":
     print("I knew I had to get to the bottom of this case, but I didn't know where to start. That's when I remembered my special talent. I went to the gardens and started talking to the animals.")
     print("")
 
+
 EnteredContinue1 = input(PressEnter_Var)
 while EnteredContinue1!="": 
     EnteredContinue1 = input(PressEnter_Var_wrong)
 
 
 # Question 0 - Lilliana was talking to a group of birds. 
+
 
 if EnteredContinue1 =="":
     print("")
@@ -146,7 +152,10 @@ if EnteredContinue1 =="":
     print ("a) What's been going on here?")
     print("b) What's up little birdie, you know whats is up?")
     print("")
-    TypeQuestion0 = input("Type A or B Question: ")
+    TypeQuestion0 = input(typeAB)
+while TypeQuestion0!="A" and TypeQuestion0 !="B" and TypeQuestion0 != "a" and TypeQuestion0 != "b": 
+    TypeQuestion0 = input(typeABWrong)
+
 
     
 
@@ -163,8 +172,11 @@ if TypeQuestion0 =="a" or "A" or "b" or "B":
     print("c) .")
     print("")
     TypeQuestion1 = input("Type 'A' Question: ")
+while TypeQuestion1!="A" and TypeQuestion1 != "a" : 
+    TypeQuestion1 = input(typeWrong)
 
 # Question 1 
+
 
 if TypeQuestion1 == "a" or "A":
     print("")
@@ -172,8 +184,12 @@ if TypeQuestion1 == "a" or "A":
     print("")
     print("Bird 1: it's been taking people, its comes in the night and takes them away")
     print("")
-    EnteredContinue2 = input("Press Enter to continue ¬ ")
 
+    EnteredContinue2 = input(PressEnter_Var)
+while EnteredContinue2!="": 
+    EnteredContinue2 = input(PressEnter_Var_wrong)
+
+    
 if EnteredContinue2 == "": 
     print("")
     print("")
