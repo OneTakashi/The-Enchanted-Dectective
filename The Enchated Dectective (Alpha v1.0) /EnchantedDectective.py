@@ -5,9 +5,6 @@ print("")
 print("")
 print("")
 print("")
-print("")
-print("")
-print("")
 
 
 print("The Enchanted Detectice (A Python Based Decison Game)")
@@ -16,8 +13,17 @@ print(" ¬ Use VS Code with the Terminal in Fullscreen for the best experience")
 print(" ¬ *But most text editors are completely compatible too i personally prefer you to use VS Code tho")
 
 
+EnteredContinue0 = 0.0
+EnteredContinue1 = 0.0
+EnteredContinue2 = 0.0
 
-
+SelectOption1 = "Type a Letter Between A to D To Select a Option ¬ "
+Selectoption1wrong = "Please Enter a Letter Between A to D To Select a Option Again! (in Higherkey) ¬ "
+Player_Name_Var = "Type a Vaild Player Name (or Leave it blank for the name Lillana) ¬ "
+PressEnter_Var = "Press Enter to Continue ¬"
+Player_Name_Var = "Type a Vaild Player Name (or Leave it blank for the name Lillana) ¬ "
+PressEnter_Var = "Press Enter to Continue ¬ "
+PressEnter_Var_wrong = "Please Press Enter to Continue Again! ¬ "
 
 #Menu (Stable)
 print("")
@@ -32,14 +38,32 @@ print("")
 print("*Check GitHub For Any Updates")
 print("-----------------------------------------------")
 print("")
-MainMenu = input("Type a Letter Between A to D To Select a Option ¬ ")
+
+
+MainMenu = input(SelectOption1)
+while MainMenu!="A" and MainMenu!="B" and MainMenu!="C" and MainMenu!="D": 
+    MainMenu = input(Selectoption1wrong)
+
+print("")
+print("")
+
+PlayerUsername = input(Player_Name_Var)
+
+
+
+
+if PlayerUsername == "":
+    PlayerUsername = "Lillana"
+
 
 #Problem 1 (Unstable!)
 
 
 
-
 #Start Menu  - The Main Game     ! 
+
+
+
 if MainMenu == "A" or "a":
     print("")
     print("")
@@ -80,7 +104,10 @@ if MainMenu == "A" or "a":
 print("")
 print("! Quick Note Before You Start - Please just type the letterd (a, b and c) or numbers if your ask to")
 print("")
-EnteredContinue0 = input("Press Enter to Continue ¬ ")
+
+EnteredContinue0 = input(PressEnter_Var)
+while EnteredContinue0!="": 
+    EnteredContinue0 = input(PressEnter_Var_wrong)
 
 if EnteredContinue0 == "":
 
@@ -88,7 +115,7 @@ if EnteredContinue0 == "":
     print("")
     print("")
     print("")
-    print("I'm Lilliana, a detective in the Ardenia police force. I've always been good at solving puzzles and getting to the bottom of things, but my real talent is something that most people would consider a liability:")
+    print("I'm",PlayerUsername ,"a detective in the Ardenia police force. I've always been good at solving puzzles and getting to the bottom of things, but my real talent is something that most people would consider a liability:")
     print("")
     print("")
     print("I can talk to animals. It's not something I go around advertising, but it comes in handy when I'm working on a case. Like this one, for example.")
@@ -102,7 +129,11 @@ if EnteredContinue0 == "":
     print("")
     print("I knew I had to get to the bottom of this case, but I didn't know where to start. That's when I remembered my special talent. I went to the gardens and started talking to the animals.")
     print("")
-    EnteredContinue1 = input("Press Enter to Continue ¬ ")
+
+EnteredContinue1 = input(PressEnter_Var)
+while EnteredContinue1!="": 
+    EnteredContinue1 = input(PressEnter_Var_wrong)
+
 
 # Question 0 - Lilliana was talking to a group of birds. 
 
@@ -110,12 +141,14 @@ if EnteredContinue1 =="":
     print("")
     print("")
     print("")
-    print("Lilliana was talking to a group of birds")
+    print(PlayerUsername ,"was talking to a group of birds")
     print("---------------------------------------------")
     print ("a) What's been going on here?")
     print("b) What's up little birdie, you know whats is up?")
     print("")
     TypeQuestion0 = input("Type A or B Question: ")
+
+    
 
 if TypeQuestion0 =="a" or "A" or "b" or "B":
     print("")
@@ -159,4 +192,3 @@ if EnteredContinue2 == "":
     print("")
     print("")
     print("")
-    
