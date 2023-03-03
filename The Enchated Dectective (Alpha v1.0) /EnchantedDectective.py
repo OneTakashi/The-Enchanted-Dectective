@@ -61,25 +61,7 @@ if PlayerUsername == "":
 #Start Menu  - The Main Game     ! 
 
 if MainMenu == "A" or "a":
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
+   
     print("")
     print("")
     print("")
