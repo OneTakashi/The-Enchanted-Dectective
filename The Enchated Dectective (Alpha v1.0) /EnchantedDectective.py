@@ -1,14 +1,8 @@
 #Starting Notes (Stable)
-print("")
-print("")
-print("")
-print("")
-print("")
-
 
 print("The Enchanted Detectice (A Python Based Decison Game)")
 print("")
-print(" ¬ Use VS Code with the Terminal in Fullscreen for the best experience")
+print(" ¬ Use Python 3.14 in Fullscreen for the best experience")
 print(" ¬ *But most text editors are completely compatible too i personally prefer you to use VS Code tho")
 
 
