@@ -61,9 +61,7 @@ if PlayerUsername == "":
 #Start Menu  - The Main Game     ! 
 
 if MainMenu == "A" or "a":
-   
-    print("")
-    print("")
+  
     print("")
     print("THE ENCHANTED DECTECTIVE: A PYTHON BASED DECISON GAME")
     print("")
@@ -74,12 +72,7 @@ if MainMenu == "A" or "a":
     print("")
     print("-----------------------------------------------------")
     print("")
-    print("")
-    print("")
-    print("")
-    print("")
 
-print("")
 print("! Quick Note Before You Start - Please just type the letterd (a, b and c) or numbers if your ask to")
 print("")
 
